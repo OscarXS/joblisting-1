@@ -8,9 +8,17 @@ interface DynamicProps {
   };
 }
 
+const checkEnvironment = () => {
+  let base_url =
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : "https://joblisting-1.vercel.app";
+
+  return base_url;
+};
+
 const getData = async (id: string) => {
-  const res = await fetch(
-    `/api/post/${id}`,
+  const res = await fetch(checkEnvironment().concat(`/api/post/${id}`),
     {
       cache: "no-store",
     }
