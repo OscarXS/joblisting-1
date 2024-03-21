@@ -7,5 +7,5 @@ export interface jobType {
   location: string;
   description: string;
   employmentType: string | null
-  createdAt: Date
+  createdAt: Date | null
 }
