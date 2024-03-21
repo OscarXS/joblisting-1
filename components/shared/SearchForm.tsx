@@ -5,6 +5,7 @@ import Button from '../ui/Button'
 import Input from '../ui/Input'
 import { jobType } from "@/types/jobTypes"
 import { ChangeEvent, useEffect, useState } from 'react'
+import Link from 'next/link'
 
 interface SearchFormProps {
   jobs: jobType[]
@@ -59,7 +60,7 @@ const SearchForm = ({ jobs }: SearchFormProps) => {
   }
 
   function onSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault()
+    event.preventDefault();
   }
 
   return (
@@ -76,7 +77,8 @@ const SearchForm = ({ jobs }: SearchFormProps) => {
                 onChange={onChange}
               />
             </div>
-            <div className="col-span-12 lg:col-span-3">
+            <div className="col-span-12 lg:col-span-3 flex gap-1">
+              /
               <Input 
                   id='location'
                   noLabel
@@ -85,7 +87,8 @@ const SearchForm = ({ jobs }: SearchFormProps) => {
                   onChange={onChange}
                 />
             </div>
-            <div className="col-span-12 lg:col-span-3">
+            <div className="col-span-12 lg:col-span-3 flex gap-1">
+              /
               <Input 
                   id='author'
                   noLabel
@@ -95,7 +98,9 @@ const SearchForm = ({ jobs }: SearchFormProps) => {
                 />
             </div>
             <div className="col-span-12 lg:col-span-3">
-              <Button type='submit' fullWidth>Search Jobs</Button>
+              <Link href={`#jobs`}>
+                <Button type='submit' fullWidth>Search Jobs</Button>
+              </Link>
             </div>
           </div>
         </form>

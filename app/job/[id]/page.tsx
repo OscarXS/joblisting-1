@@ -8,6 +8,7 @@ interface DynamicProps {
   };
 }
 
+// ** THE CODE NEEDED TO LINK TO SLUG PAGES OR ID PAGES
 const checkEnvironment = () => {
   let base_url =
     process.env.NODE_ENV === "development"
@@ -18,7 +19,7 @@ const checkEnvironment = () => {
 };
 
 const getData = async (id: string) => {
-  const res = await fetch(checkEnvironment().concat(`/api/post/${id}`),
+  const res = await fetch(checkEnvironment().concat(`/api/post/${id}`), // ** TIL HERE
     {
       cache: "no-store",
     }
