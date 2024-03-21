@@ -22,25 +22,25 @@ const Sponsors = () => {
             height={144}
           />
           <Image
-            src={"/discord.png"}
+            src={"/Discord.png"}
             alt="Discord logo"
             width={144}
             height={144}
           />
           <Image
-            src={"/slack.png"}
+            src={"/Slack.png"}
             alt="slack logo"
             width={144}
             height={144}
           />
           <Image
-            src={"/capitalone.png"}
+            src={"/Capitalone.png"}
             alt="CapitalOne logo"
             width={144}
             height={144}
           />
           <Image
-            src={"/dropbox.png"}
+            src={"/Dropbox.png"}
             alt="DropBox logo"
             width={144}
             height={144}
