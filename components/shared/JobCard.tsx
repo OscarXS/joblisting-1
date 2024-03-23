@@ -11,7 +11,7 @@ interface JobsCardProps {
 const JobCard = ({ job }: JobsCardProps) => {
   return (
     <Link href={`/job/${job.id}`}>
-      <div className="border p-3 rounded-md flex flex-col hover:bg-purple-600 transition duration-700 hover:text-white">
+      <div className="border p-3 rounded-md flex flex-col hover:bg-blue-600 transition duration-700 hover:text-white">
         <div className="flex justify-between">
           <div>
             <Image
@@ -29,7 +29,7 @@ const JobCard = ({ job }: JobsCardProps) => {
         <div className="mt-3 text-xl">
           <h3>{job.name}</h3>
           <p>{job.location}</p>
-          <span className="bg-purple-600 text-xs px-3 rounded-md text-white">
+          <span className="bg-blue-600 text-xs px-3 rounded-md text-white">
             {job.employmentType}
           </span>
         </div>

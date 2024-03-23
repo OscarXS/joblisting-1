@@ -9,7 +9,7 @@ const Contact = () => {
           <div className="md:col-span-6">
             <img
               className="h-auto max-w-full"
-              src="contact.png"
+              src="/contact.jpg"
               alt="contact image"
             />
           </div>

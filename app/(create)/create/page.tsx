@@ -7,7 +7,7 @@ const page = () => {
         <div className="w-full mt-5 text-center">
             <h1 className="md:text-6xl font-extrabold uppercase mb-1">
                 Post a {" "}
-                <span className="text-purple-600">job</span>
+                <span className="text-blue-600">job</span>
             </h1>
             <span className="w-full text-center">
                 Currently 100,000 users are actively looking for a job

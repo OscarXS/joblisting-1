@@ -77,8 +77,7 @@ const SearchForm = ({ jobs }: SearchFormProps) => {
                 onChange={onChange}
               />
             </div>
-            <div className="col-span-12 lg:col-span-3 flex gap-1">
-              /
+            <div className="col-span-12 lg:col-span-3">
               <Input 
                   id='location'
                   noLabel
@@ -87,8 +86,7 @@ const SearchForm = ({ jobs }: SearchFormProps) => {
                   onChange={onChange}
                 />
             </div>
-            <div className="col-span-12 lg:col-span-3 flex gap-1">
-              /
+            <div className="col-span-12 lg:col-span-3">
               <Input 
                   id='author'
                   noLabel

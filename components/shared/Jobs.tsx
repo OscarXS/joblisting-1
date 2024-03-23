@@ -17,7 +17,7 @@ const Jobs = () => {
 
   return (
     <div id="jobs" className="py-10 w-full">
-        <div className="w-full text-center mb-10 text-2xl font-extrabold uppercase text-purple-600">
+        <div className="w-full text-center mb-10 text-2xl font-extrabold uppercase text-blue-600">
             <h2>Job Listings</h2>
         </div>
         {filteredJobs.length < 1 ? (

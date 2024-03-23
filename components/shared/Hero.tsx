@@ -15,7 +15,7 @@ const Hero = ({ jobs }: HeroProps) => {
         <div className="text-center flex flex-col gap-3">
           <h1 className="text-6xl font-extrabold text-black">
             Land The{" "}
-            <span className="text-purple-600 font-extrabold">
+            <span className="text-blue-600 font-extrabold">
               Dream Job
             </span>
             , You Deserve
@@ -26,6 +26,9 @@ const Hero = ({ jobs }: HeroProps) => {
           </span>
         </div>
         <SearchForm jobs={jobs} />
+      </div>
+      <div>
+
       </div>
     </div>
   );

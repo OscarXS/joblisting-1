@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="py-16 bg-gray-50/50 mt-10" id="about">
       <div className="w-[90%] mx-auto max-w-[1450px]">
-        <h2 className="w-full text-center mb-10 text-2xl font-extrabold uppercase text-purple-600">
+        <h2 className="w-full text-center mb-10 text-2xl font-extrabold uppercase text-blue-600">
           About Us
         </h2>
 
@@ -27,12 +27,12 @@ const About = () => {
             voluptatem nesciunt perferendis assumenda.
           </p>
 
-          <Image
+          {/* <Image
             src={"/signature.png"}
             width={400}
             height={400}
             alt="workify signature"
-          />
+          /> */}
         </div>
       </div>
     </div>

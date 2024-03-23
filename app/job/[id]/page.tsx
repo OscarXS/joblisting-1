@@ -41,7 +41,7 @@ const page = async ({ params }: DynamicProps) => {
     <>
       <div className="bg-[url('/hero.png')] h-fit relative w-full bg-cover mt-[-70px] py-28">
         <div className="flex flex-col h-full items-center justify-center pt-[82px] gap-20 w-[90%] mx-auto max-w-[1450px]">
-          <h1 className="text-purple-600 font-bold text-4xl">
+          <h1 className="text-blue-600 font-bold text-4xl">
             {job.name}
           </h1>
         </div>
